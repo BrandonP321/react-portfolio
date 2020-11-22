@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ProjectCard from '../../components/ProjectCard'
 import ContactForm from '../../components/ContactForm'
+import './index.css'
 
 export default function Home() {
     const [projects, setProjects] = useState([
@@ -32,13 +33,15 @@ export default function Home() {
     return (
         <div>
             <Header />
-            {projects.map(project => {
-                return (
-                    <ProjectCard 
-                        project={project}
-                    />
-                )
-            })}
+            <div id='projects'>
+                {projects.map(project => {
+                    return (
+                        <ProjectCard
+                            project={project}
+                        />
+                    )
+                })}
+            </div>
             <ContactForm />
             <Footer />
         </div>

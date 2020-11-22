@@ -3,7 +3,7 @@ import './index.css'
 
 export default function ContactForm() {
     return (
-        <form>
+        <form id='contact'>
             <h1 className='text-center'>Contact Me</h1>
             <div className="form-group">
                 <label for="NameInput">Name</label>
